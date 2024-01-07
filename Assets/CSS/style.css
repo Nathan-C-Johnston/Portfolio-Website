@@ -1,0 +1,72 @@
+/***This is the style sheet for the portfolio website. The intent is to make the website look professional and awesome!***/
+
+/***These are global style settings.***/
+*{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #EFEAE3;
+    color: #004aad;
+}
+/***These are style settings for the banner and navigation***/
+.Banner {
+    display: flex;
+    background-image: url("../images/PortfolioBanner.png");  
+    height: 28vw;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3%;
+}
+.Name { 
+    font-size: 4.5vw;
+    background-color: transparent;
+}
+.ThumbsUp {
+    height: 10vw;
+    width: 10vw;
+    border-radius: 35%;  
+}
+p {
+    background-color: transparent;
+    font-size: 2vw;
+    text-align: center;
+}
+.Navigation {
+    position: absolute;
+    top: 0px;
+    right: 16px;
+    font-size: 2.5vw;
+}
+.Navigation a {
+    background-color: transparent;
+    color: #004aad;
+    font-weight: bolder;
+}
+
+/***This section styles the About Me section of the webpage***/
+.AboutMe {
+    display: flex;
+    padding: 2vw;
+
+}
+.AboutMe h1 {
+    font-size: 2.4vw;
+    transform: rotate(-180deg);
+    text-wrap: nowrap;
+    writing-mode: vertical-rl;
+    text-align: center;
+    background-color: transparent;
+}   
+.AboutMe p {
+    font-size: 1.5vw;
+    text-align: left;
+}
+
+
+    
+     
+    
+    
+    
+    
+    
