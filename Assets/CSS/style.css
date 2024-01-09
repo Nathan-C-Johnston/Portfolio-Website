@@ -19,7 +19,6 @@
     flex-direction: column;
     background-size: contain;
     background-repeat: no-repeat;
-    /* border-radius: 75px; */
     border-bottom-right-radius: 2vw 5vw;
     border-bottom-left-radius: 2vw 5vw;
 }
