@@ -1,69 +1,164 @@
 /***This is the style sheet for the portfolio website. The intent is to make the website look professional and awesome!***/
 
 /***These are global style settings.***/
+:root{
+    --BoxColor: purple;
+    --DisplayValue: Flex;
+}
 *{
     font-family: 'Courier New', Courier, monospace;
     background-color: #EFEAE3;
     color: #004aad;
 }
+
 /***These are style settings for the banner and navigation***/
 .Banner {
     display: flex;
     background-image: url("../images/PortfolioBanner.png");  
-    height: 28vw;
+    background-position: bottom;
     flex-direction: column;
-    justify-content: space-between;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    border-radius: 3%;
+    /* border-radius: 75px; */
+    border-bottom-right-radius: 2vw 5vw;
+    border-bottom-left-radius: 2vw 5vw;
 }
-.Name { 
-    font-size: 4.5vw;
-    background-color: transparent;
-}
+
 .ThumbsUp {
     height: 10vw;
     width: 10vw;
     border-radius: 35%;  
 }
+
+.Banner h1 { 
+    margin-left: 1vw;
+    font-size: 4.5vw;
+    background-color: transparent;
+    margin-bottom: -2vw; 
+}
+
+.Banner h2 { 
+    margin-left: 1vw;
+    font-size: 1.5vw;
+    background-color: transparent;
+}
+
 p {
     background-color: transparent;
     font-size: 2vw;
     text-align: center;
+    margin-bottom: .4vw;
 }
+
 .Navigation {
     position: absolute;
     top: 0px;
     right: 16px;
     font-size: 2.5vw;
 }
+
 .Navigation a {
     background-color: transparent;
     color: #004aad;
     font-weight: bolder;
 }
 
-/***This section styles the About Me section of the webpage***/
-.AboutMe {
-    display: flex;
+/***This section styles the main portion of the webpage***/
+main {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 12vw 24vw 14vw 10vw;
+    grid-template-columns: 5vw 28vw 28vw 28vw;
+    grid-gap: 1vw;
     padding: 2vw;
-
 }
-.AboutMe h1 {
+.AboutMeLink {
+    grid-column: span 1;
+    grid-row: span 1;
+    display: var(--DisplayValue);
     font-size: 2.4vw;
+    font-weight: bolder;
+    text-decoration-line: underline;
     transform: rotate(-180deg);
     text-wrap: nowrap;
     writing-mode: vertical-rl;
-    text-align: center;
-    background-color: transparent;
-}   
-.AboutMe p {
+    align-self: center;
+}
+.AboutMeParagraph {
+    grid-column: span 3;
+    grid-row: span 1;
+    display: var(--DisplayValue);
     font-size: 1.5vw;
+    font-weight: bolder;
     text-align: left;
 }
 
-
+/***This section styles the Project portion of the webpage***/
+.ProjectsLink {
+    grid-column: span 1;
+    grid-row: span 2;
+    display: var(--DisplayValue);
+    font-size: 2.4vw;
+    font-weight: bolder;
+    text-decoration-line: underline;
+    transform: rotate(-180deg);
+    text-wrap: nowrap;
+    writing-mode: vertical-rl;
+    align-self: center;
+}
+.ProminentProject {
+    grid-column: span 3;
+    grid-row: span  1;
+    display: var(--DisplayValue);
+    width: 86vw;
+    height: 100%;
+    border-radius: 5vw;
+}
+.OtherProject1 {
+    grid-column: span 1;
+    grid-row: span 1;
+    display: var(--DisplayValue);
+    border-radius: 5vw;
+    width: 28vw;
+    height: 100%;
+}
+.OtherProject2 {
+    grid-column: span 1;
+    grid-row: span 1;
+    display: var(--DisplayValue);
+    border-radius: 5vw;
+    width: 28vw;
+    height: 100%;
+}
+.OtherProject3 {
+    grid-column: span 1;
+    grid-row: span 1;
+    display: var(--DisplayValue);
+    border-radius: 5vw;
+    width: 28vw;
+    height: 100%;
+}
+.ContactLink {
+    grid-column: span 1;
+    grid-row: span 1;
+    display: var(--DisplayValue);
+    font-size: 2.4vw;
+    font-weight: bolder;
+    text-decoration-line: underline;
+    transform: rotate(-180deg);
+    text-wrap: nowrap;
+    writing-mode: vertical-rl;
+    align-self: center;
+}
+.ContactInfo {
+    grid-column: span 3;
+    grid-row: span  1;
+    align-self: center;
+    font-weight: bolder;
     
+}
+
+
      
     
     
